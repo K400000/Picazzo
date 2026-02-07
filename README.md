@@ -88,4 +88,4 @@ Picazzo/
 * **Mr. Piyakorn Kacharnont** - [GitHub Profile](https://github.com/Shiseko)
 * **Mr. Kittichai Kuljaruhiran** - [GitHub Profile](https://github.com/kittikul00)
 * **Mr. Mawin Boonsri** - [GitHub Profile](https://github.com/Mawinbosri)
-* **Mr. Kannnnn** - [Github Profile]()
+* **Mr. Thanapat Kongprasert** - [Github Profile](https://github.com/ThanapatKong48)
