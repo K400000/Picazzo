@@ -1,158 +1,91 @@
-# Picazzo - Grocery Shopping System
+# 🛒 Picazzo - Shopping System
 
-A desktop-based e-commerce application for grocery shopping built with Java Swing. This system provides a complete shopping experience including user authentication, product browsing, shopping cart management, and checkout process.
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=java&theme=light" height="50" alt="Java" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netbeans/netbeans-original.svg" height="40" alt="NetBeans" style="margin: 0 5px;" />
+    <img src="https://skillicons.dev/icons?i=git,github&theme=light" height="50" alt="Git & GitHub" />
+  </a>
+</p>
 
-## Team Members
-
-1. **John Doe** - Project Lead & Backend Developer
-2. **Jane Smith** - UI/UX Designer & Frontend Developer
-3. **Michael Johnson** - Database Administrator
-4. **Sarah Williams** - Quality Assurance & Testing
-5. **David Brown** - Documentation & System Analyst
-
-## Technologies Used
-
-### Core Technologies
-- **Java SE** - Main programming language
-- **Java Swing** - GUI framework for desktop application
-- **Apache POI** - Excel file manipulation for data storage
-
-### Development Tools
-- **NetBeans IDE** - Primary development environment
-- **Git** - Version control system
-
-## Features
-
-### 🔐 User Authentication
-- User registration with email validation
-- Secure login system
-- Password recovery with PIN verification
-- User data persistence in Excel format
-
-### 🛒 Shopping System
-- Browse products across multiple categories:
-  - Fresh Food
-  - Fruits & Vegetables
-  - Snacks
-  - Dry Food
-  - Frozen Food
-  - Beverages
-- Product images and pricing information
-- Real-time inventory display
-
-### 🛍️ Shopping Cart
-- Add/remove items from cart
-- Adjust product quantities
-- Real-time price calculation
-- Persistent cart across sessions
-
-### 💳 Checkout Process
-- Delivery address input form
-- QR code payment integration
-- Order receipt generation
-- Transaction summary
-
-## Project Structure
-
-```
-Picazzo/
-├── src/
-│   └── Picasso/
-│       ├── gui/
-│       │   ├── auth/          # Authentication screens
-│       │   ├── shop/          # Product browsing screens
-│       │   └── checkout/      # Checkout process screens
-│       ├── model/             # Data models
-│       └── utils/             # Utility classes
-├── resources/
-│   └── Picasso/
-│       └── images/            # Product and UI images
-└── data.xlsx                  # User and product database
-```
-
-## Setup Instructions
-
-### Prerequisites
-- Java Development Kit (JDK) 8 or higher
-- NetBeans IDE (recommended) or any Java IDE
-- Apache POI library
-
-### Installation Steps
-
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd Picazzo
-   ```
-
-2. **Import the project**
-   - Open NetBeans IDE
-   - File → Open Project
-   - Select the Picazzo folder
-
-3. **Add Apache POI library**
-   - Right-click on the project → Properties
-   - Libraries → Add JAR/Folder
-   - Add Apache POI JAR files
-
-4. **Verify data file**
-   - Ensure `data.xlsx` exists in the project root
-   - This file stores user accounts and product information
-
-5. **Run the application**
-   - Right-click on `Picasso.gui.auth.Authenticator`
-   - Run File
-
-## Usage
-
-1. **First Time Users**
-   - Click "Sign Up" on the login screen
-   - Enter email and password
-   - Confirm password and submit
-
-2. **Existing Users**
-   - Enter email and password
-   - Click "Login"
-
-3. **Shopping**
-   - Browse categories using navigation buttons
-   - Click on product images to add items to cart
-   - Adjust quantities as needed
-
-4. **Checkout**
-   - Review cart contents
-   - Enter delivery address
-   - Complete payment via QR code
-   - Receive digital receipt
-
-## Data Storage
-
-The application uses Excel (`.xlsx`) format for data persistence:
-- **Sheet1**: User accounts (Email, Password, etc.)
-- Product information is embedded in the code
-
-## Known Issues
-
-- Image paths may need adjustment based on deployment location
-- Excel file must be closed before running the application
-- Single-user mode (no concurrent access to data file)
-
-## Future Enhancements
-
-- Migration to database system (MySQL/PostgreSQL)
-- Multi-language support
-- Order history tracking
-- Admin panel for product management
-- Payment gateway integration
-
-## License
-
-This project is developed for educational purposes.
-
-## Contact
-
-For questions or feedback, please contact the development team.
+<p align="center">
+  <b>Software Construction Mini Project</b> • <i>Department of Computer Science</i>
+  <br>
+  <br>
+  <img src="https://img.shields.io/badge/License-Educational-green?style=flat-square" alt="License">
+</p>
 
 ---
 
-**Last Updated**: February 2026
+## 📖 Project Overview
+
+**Picazzo** is a comprehensive desktop application designed to simulate a **Retail Grocery Store environment**. Built using **Java Swing**, this system demonstrates the core principles of software construction, object-oriented programming (OOP), and user interface design.
+
+This project was developed as a **Mini Project** for the **Software Construction** course. It aims to replicate a real-world **retail ecosystem**, covering everything from user authentication and product inventory management to the point-of-sale (POS) checkout process.
+
+The system utilizes **Microsoft Excel (via Apache POI)** as a lightweight database solution to handle user credentials and transaction data, demonstrating file-based data persistence without the need for a complex SQL server setup.
+
+---
+
+## ✨ Key Features
+
+### 🔐 1. Authentication & Security
+* **User Registration:** Secure sign-up process with email format validation.
+* **Secure Login:** Access control system for authorized users.
+* **Password Recovery:** PIN-based verification system for resetting passwords.
+
+### 🏪 2. Retail & Inventory Management
+* **Categorized Browsing:** Organized product catalog including Fresh Food, Fruits & Vegetables, Snacks, Dry Food, Frozen Food, and Beverages.
+* **Real-time Inventory:** Displays current stock levels, simulating a real retail stock system where items decrease upon purchase.
+* **Visual Interface:** High-quality images and clear pricing for a seamless user experience.
+
+### 🛒 3. Cart & Checkout (POS)
+* **Dynamic Shopping Cart:** Add/remove items and adjust quantities with real-time total calculation.
+* **Order Processing:** Delivery address input and transaction summary.
+* **Payment Simulation:** Integrated QR Code payment interface.
+* **Digital Receipt:** Generates an electronic receipt upon successful transaction.
+
+---
+
+## 🛠️ Technology Stack
+
+This project is built using standard industry tools to ensure reliability and maintainability.
+
+| Category | Technologies |
+| :--- | :--- |
+| **Language** | Java SE (JDK 8+) |
+| **GUI Framework** | Java Swing (Standard Widget Toolkit) |
+| **IDE** | NetBeans IDE |
+| **Data Storage** | Microsoft Excel (.xlsx) via **Apache POI Library** |
+| **Version Control** | Git & GitHub |
+
+---
+
+## 📂 Project Structure
+
+The project follows a structured architecture (MVC-based) for maintainability:
+
+```text
+Picazzo/
+├── src/
+│   └── Picasso/
+│       ├── gui/           # User Interface (View)
+│       │   ├── auth/      # Login & Registration Screens
+│       │   ├── shop/      # Product Browsing & Inventory
+│       │   └── checkout/  # Cart & Payment Screens
+│       ├── model/         # Data Models & Logic
+│       └── utils/         # Utility Classes (Helpers)
+├── resources/
+│   └── Picasso/
+│       └── images/        # Assets & Icons
+└── data.xlsx              # Excel Database (Do not delete)
+```
+
+---
+
+## 👥 Team Members
+* **Mr. Supasin Khamphayae** - [GitHub Profile](https://github.com/K400000)
+* **Mr. Piyakorn Kacharnont** - [GitHub Profile](https://github.com/Shiseko)
+* **Mr. Kittichai Kuljaruhiran** - [GitHub Profile](https://github.com/kittikul00)
+* **Mr. Mawin Boonsri** - [GitHub Profile](https://github.com/Mawinbosri)
+* **Mr. Kannnnn** - [Github Profile]()
